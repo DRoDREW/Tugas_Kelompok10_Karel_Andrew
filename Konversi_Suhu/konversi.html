@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converter Suhu</title>
+        <link rel="stylesheet" href="css/konversi.css">
+        <script src="js/konversi.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Converter Suhu</h1>
+            <div class="isi-converter">
+                <div class="input">
+                    <div class="input-list">
+                        <select id="dariSatuan">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                            <option value="rankine">Rankine</option>
+                        </select>
+                        <input type="number" id="inputSuhu" placeholder="Enter temperature">
+                    </div>
+                </div>
+                
+                <div class="icon">→</div>
+                
+                <div class="output">
+                    <div class="input-group">
+                        <select id="keSatuan">
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="celsius">Celsius</option>
+                            <option value="kelvin">Kelvin</option>
+                            <option value="rankine">Rankine</option>
+                        </select>
+                    </div>
+                    <div class="hasil" id="hasilKonversi"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="convertTemp()" class="convert-btn">Convert</button>
+                <button onclick="clearForm()" class="clear-btn">Clear</button>
+            </div>
+        </div>      
+    </body>
+</html>
